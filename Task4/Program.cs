@@ -11,5 +11,8 @@ if (num == 6 || num == 7)
  {
   Console.WriteLine("этот день выходной");
  }
-
+ else if (num < 1 || num > 7)
+ {
+    Console.WriteLine("неверное число, укажите число от 1 до 7");
+ }
  else Console.WriteLine("этот день не выходной");
