@@ -5,7 +5,7 @@
 
 Console.Write("Введите размер массива: ");
 int size = Convert.ToInt32(Console.ReadLine());
-double[] numbers = new double[size];// если я правильно понял что такое вещественные, то нужно использовать double
+double[] numbers = new double[size];// если я правильно понял что такое вещественные числа, то нужно использовать double
 ArrRandomNumbers(numbers);
 PrintArray(numbers);
 double min = Int32.MaxValue;
