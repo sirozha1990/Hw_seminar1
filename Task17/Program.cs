@@ -11,9 +11,12 @@ Console.Write("Введите k2: ");
 var k2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b2: ");
 var b2 = Convert.ToDouble(Console.ReadLine());
- 
- 
-var x = -(b1 - b2) / (k1 - k2);
-var y = k1 * x + b1;
-  
-Console.WriteLine($"Пересечение в точке: ({x};{y})");
+
+if (k1 == k2 && b1 == b2) Console.WriteLine("Линии совпадают");
+else if (k1 == k2) Console.WriteLine("Линии не пересекаются");
+else
+{
+    var x = -(b1 - b2) / (k1 - k2);
+    var y = k1 * x + b1;
+    Console.WriteLine($"Пересечение линий в точке: ({x};{y})");
+}
