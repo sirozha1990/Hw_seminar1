@@ -23,7 +23,7 @@ for (int j = 0; j < numbers.GetLength(1); j++)
         avarage = (avarage + numbers[i, j]);
     }
     avarage = avarage / n;
-    Console.Write(avarage + "; ");
+    Console.Write(Math.Round(avarage,2) + "; ");
 }
 Console.WriteLine();
 PrintArray(numbers);
